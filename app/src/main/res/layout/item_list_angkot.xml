@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_angkot"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="8dp"
+    card_view:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/image_angkot"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            tools:src="@drawable/a1"/>
+
+        <TextView
+            android:id="@+id/txt_trayek_angkot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:layout_toRightOf="@+id/image_angkot"
+            android:textStyle="bold"
+            tools:text="Cileunyi - Caheum"/>
+
+        <TextView
+            android:id="@+id/txt_kode_angkot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColorBlack"
+            android:textSize="14sp"
+            android:layout_toRightOf="@+id/image_angkot"
+            android:layout_below="@+id/txt_trayek_angkot"
+            tools:text="Kode : 011B"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/image_angkot"
+            android:layout_below="@+id/txt_kode_angkot">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_armada"/>
+
+            <TextView
+                android:id="@+id/txt_jumlah_armada"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="4dp"
+                android:layout_gravity="center"
+                android:textColor="@color/textColorBlack"
+                android:textSize="14sp"
+                tools:text="121"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_jarak"/>
+
+            <TextView
+                android:id="@+id/txt_jarak"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_gravity="center"
+                android:textColor="@color/textColorBlack"
+                android:textSize="14sp"
+                tools:text="121"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
