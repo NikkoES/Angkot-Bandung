@@ -21,7 +21,7 @@ public class DialogUtils {
                 .show();
     }
 
-    public static ProgressDialog showProgressDialog(Context context, String title, String message){
+    public static ProgressDialog showProgressDialog(Context context, String title, String message) {
         ProgressDialog dialog = new ProgressDialog(context);
         dialog.setTitle(title);
         dialog.setMessage(message);

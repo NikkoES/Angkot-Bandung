@@ -27,8 +27,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                     startActivity(new Intent(SplashScreenActivity.this, MainActivity.class));
                     overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
                     finish();
-                }
-                else {
+                } else {
                     DialogUtils.showAlertDialog(SplashScreenActivity.this, "No Internet Connection", "You're internet is disconnected");
                 }
             }
